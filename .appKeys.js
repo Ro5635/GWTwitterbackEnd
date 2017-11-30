@@ -1,7 +1,0 @@
-
-exports.twitterAuth = [
-'UmSQY8vTReSFB899ulJKxYOyM',
-'CusWKHXahr621PlwPB4r96HHyIbPCIWjDlkCAsNsRElpxXjqvh',
-'936148739940548610-MpNXlgDj2T6j3MdgLMHLUOw4DdEgCAU',
-'jedJNW1ytRzCEiGyXceBy9IsV5mu63lxsCwRewRVCwVI0'
-];

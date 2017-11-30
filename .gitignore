@@ -1,6 +1,8 @@
 
 # Created by https://www.gitignore.io/api/node,macos,windows,webstorm,jetbrains,archlinuxpackages
 
+.appKeys.js
+
 ### ArchLinuxPackages ###
 *.tar
 *.tar.*
