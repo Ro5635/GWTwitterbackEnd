@@ -83,7 +83,7 @@ router.get('/access-token', (req, res) => {
 });
 
 
-let mock = require('./mock.json');
+let mock = require('../mock.json');
 
 router.get('/test-data', (req, res) => {
     res.send(mock);
