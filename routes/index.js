@@ -7,6 +7,12 @@ const Twitter = require('node-twitter-api');
 // Custom models
 const tweets = require('../models/tweets');
 
+let baseURL = 'https://alexwileyy.github.io/gw-social-ui/';
+
+if(process.env.environment === 'dev'){
+    baseURL = 'http://localhost:4200'
+}
+
 let twitter = new Twitter({
     consumerKey: 'EoyqbOuKhTRDgfe7cpuZx2TlG',
     consumerSecret: 'mQfLhgXOg2SLqTCYKs7VNf7bjStVMgdOA8GweP6AtClbryEMtX',
