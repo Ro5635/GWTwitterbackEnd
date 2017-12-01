@@ -19,7 +19,7 @@ let twitter = new Twitter({
     callback: baseURL + '/auth'
 });
 
-app.use(function(req, res, next) {
+router.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
@@ -46,7 +46,7 @@ router.get('/', function(req, res, next) {
 });
 
 
-app.get('/twitter', (req, res) => {
+router.get('/twitter', (req, res) => {
     // res.send(JSON.stringify({text: 'something here...'}))
     twitter.getRequestToken((err, requestToken, requestSecret) => {
         if(err){
@@ -62,7 +62,7 @@ app.get('/twitter', (req, res) => {
 });
 
 
-app.get('/access-token', (req, res) => {
+router.get('/access-token', (req, res) => {
     let verifier = req.query.verifier,
        token = req.query.token;
 
@@ -85,7 +85,7 @@ app.get('/access-token', (req, res) => {
 
 let mock = require('./mock.json');
 
-app.get('/test-data', (req, res) => {
+router.get('/test-data', (req, res) => {
     res.send(mock);
 });
 
