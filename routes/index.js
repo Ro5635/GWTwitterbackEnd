@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const secret = require("secret");
-const twitter = require('node-twitter-api');
+const Twitter = require('node-twitter-api');
 
 // Custom models
 const tweets = require('../models/tweets');
